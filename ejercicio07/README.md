@@ -20,9 +20,9 @@ El archivo define dos servicios.
 
 &nbsp;&nbsp;&nbsp;&nbsp;**image: nicopaez/jobvacancy-ruby:1.3.0** Imagen del contenedor
 
-&nbsp;&nbsp;&nbsp;&nbsp;**links:** **Servicios con los que interactua**
+&nbsp;&nbsp;&nbsp;&nbsp;**links:** Servicios con los que interactua
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**- db** **Nombre del servicio con que interactua**
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**- db** Nombre del servicio con que interactua
 
 &nbsp;&nbsp;&nbsp;&nbsp;**ports:** Lista de los mapeos de puertos
 
