@@ -1,4 +1,5 @@
 FROM openjdk:11
-WORKDIR /app
-COPY passwordapi.jar /app
-CMD ["java", "-jar", "passwordapi.jar"]
+WORKDIR /
+ADD passwordapi.jar passwordapi.jar
+EXPOSE 8080
+CMD ["java","-jar","/passwordapi.jar"]
