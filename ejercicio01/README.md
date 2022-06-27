@@ -28,3 +28,10 @@ docker run --name nginx-container -d -p 8080:80 nginx-image
 ## Notas para el docente
 
 Hice la versión más básica de colocar el nombre en index.html, que es el archivo que por defecto sirven los servidores web. Pensé que la entrega era el miércoles en clase, hoy me di cuenta que era ayer, así que estoy ya fuera de término y haciendo lo más rápido posible.
+
+
+# Versión 2 (sin crear una nueva imagen)
+
+```
+docker run --name nginx-container -v $PWD/html:/usr/share/nginx/html:ro -p 8080:80 -d nginx
+```
