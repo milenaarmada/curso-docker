@@ -19,3 +19,6 @@ docker-compose up --scale password-api=2
 2. No me funcionó montar ngix.conf dentro del docker-compose. Tuve que armar una imagen separada que lo copie.
 
 3. No me queda claro el tema de hardcodear los nombres de los containers dentro del nginx.conf siendo que estos nombres son aleatorios generados por docker.
+
+
+Ejemplos tomados de https://levelup.gitconnected.com/nginx-load-balancing-and-using-with-docker-7e16c49f5d9 
