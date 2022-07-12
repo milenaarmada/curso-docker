@@ -1,0 +1,20 @@
+version: '2'
+services:
+  password-api:
+    image: nicopaez/password-api:latest
+    ports:
+      - 3000
+    restart: always
+
+  ngnix-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    ports: 
+      - "8090:80"
+    depends_on: 
+      - password-api
+    restart: always
+
+
+
